@@ -1,6 +1,8 @@
 :root{
  --background-black: #141414;
- --container-grey: #1f1f1f; 
+ --container-grey: #1f1f1f;
+ --button: #333333; 
+ --accent: rgb(209, 248, 37);
 
  --title: "Tiny5", sans-serif;
  --body: "Handjet", sans-serif;
@@ -29,6 +31,7 @@ body{
  background-color: var(--container-grey);
  position: absolute;
  top: 25%;
+ padding-bottom: 10px;
 }
 
 .container__inner{
@@ -48,18 +51,64 @@ img{
  font-family: var(--title);
  font-weight: 600;
  font-size: 1.6rem;
- position: absolute;
+ /* position: absolute; */
  right: 60px;
  top: 130px;
+ letter-spacing: 2px;
+
 }
 
 .devLocation{
  font-family: var(--body);
- font-size: 0.8rem;
+ font-size: 0.6rem;
  padding-top: 10px;
- letter-spacing: 0.1r;
+ letter-spacing: 0.1rem;
+ position: relative;
+ top: -10px;
+ color: var(--accent);
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.devDescription{
+ font-family: var(--body);
+ font-size: 0.7rem;
+}
+
+.containter__btn{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ margin-bottom: 10px;
+}
+
+.socialLink{
+ width: 85%;
+ height: 2rem;
+ margin-top: 15px;
+ background: var(--button);
+ border-radius: 10px; 
+ border: none;
+}
+
+.socialLink > a{
+ color: white;
+ text-decoration: none;
+ font-family: var(--body);
+ font-size: 1.2rem;
+ transition: 0.5s;
+}
+
+.socialLink:hover{
+ box-shadow: 0 0 35px var(--accent);
+ letter-spacing: 0.3em;
+ font-weight: 600;
+}
+.socialLink > a:hover{
+}
+
+.attribution { 
+ font-size: 11px; 
+ text-align: center; 
+
+}
 
 .attribution a { color: hsl(228, 45%, 44%); }
